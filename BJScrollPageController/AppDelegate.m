@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  BJScroollPageController
+//  BJScrollPageController
 //
-//  Created by booj on 15/10/31.
+//  Created by momo783 on 15/11/1.
 //  Copyright © 2015年 booj. All rights reserved.
 //
 

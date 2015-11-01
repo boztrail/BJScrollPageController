@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4625ACA41BE4BF46004AE500"
-               BuildableName = "BJScroollPageController.app"
-               BlueprintName = "BJScroollPageController"
-               ReferencedContainer = "container:BJScroollPageController.xcodeproj">
+               BlueprintIdentifier = "461B1A9F1BE66866003CCBDA"
+               BuildableName = "BJScrollPageController.app"
+               BlueprintName = "BJScrollPageController"
+               ReferencedContainer = "container:BJScrollPageController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4625ACA41BE4BF46004AE500"
-            BuildableName = "BJScroollPageController.app"
-            BlueprintName = "BJScroollPageController"
-            ReferencedContainer = "container:BJScroollPageController.xcodeproj">
+            BlueprintIdentifier = "461B1A9F1BE66866003CCBDA"
+            BuildableName = "BJScrollPageController.app"
+            BlueprintName = "BJScrollPageController"
+            ReferencedContainer = "container:BJScrollPageController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4625ACA41BE4BF46004AE500"
-            BuildableName = "BJScroollPageController.app"
-            BlueprintName = "BJScroollPageController"
-            ReferencedContainer = "container:BJScroollPageController.xcodeproj">
+            BlueprintIdentifier = "461B1A9F1BE66866003CCBDA"
+            BuildableName = "BJScrollPageController.app"
+            BlueprintName = "BJScrollPageController"
+            ReferencedContainer = "container:BJScrollPageController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4625ACA41BE4BF46004AE500"
-            BuildableName = "BJScroollPageController.app"
-            BlueprintName = "BJScroollPageController"
-            ReferencedContainer = "container:BJScroollPageController.xcodeproj">
+            BlueprintIdentifier = "461B1A9F1BE66866003CCBDA"
+            BuildableName = "BJScrollPageController.app"
+            BlueprintName = "BJScrollPageController"
+            ReferencedContainer = "container:BJScrollPageController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

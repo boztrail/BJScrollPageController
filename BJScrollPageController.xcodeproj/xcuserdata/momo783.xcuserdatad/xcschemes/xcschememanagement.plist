@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BJScroollPageController.xcscheme</key>
+		<key>BJScrollPageController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4625ACA41BE4BF46004AE500</key>
+		<key>461B1A9F1BE66866003CCBDA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
