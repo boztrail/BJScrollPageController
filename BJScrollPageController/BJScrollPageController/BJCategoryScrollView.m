@@ -190,6 +190,7 @@
         }
         _containerView.frame = rect;
         line.frame = lRect;
+        self.contentSize = rect.size;
     }
     return self;
 }
