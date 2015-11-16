@@ -191,6 +191,7 @@
         _containerView.frame = rect;
         line.frame = lRect;
         self.contentSize = rect.size;
+        [self updateContentOffset];
     }
     return self;
 }
