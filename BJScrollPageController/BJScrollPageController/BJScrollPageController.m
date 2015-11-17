@@ -304,43 +304,48 @@
             [self queueController:BJQueueTypeMoveLeft];
             if (index < self.categoryTexts.count - 1) {
                 [self addSubController:[self queueController:BJQueueTypeRight] index:index + 1];
-                self.selectVC = [self queueController:BJQueueTypeMid];
             }
         } else if (_selectIndex == index + 1) {
             [self queueController:BJQueueTypeMoveRight];
             if (index > 0) {
                 [self addSubController:[self queueController:BJQueueTypeLeft] index:index - 1];
-                self.selectVC = [self queueController:BJQueueTypeMid];
+            }
+        } else if (_selectIndex == index - 2) {
+            [self queueController:BJQueueTypeMoveLeft];
+            [self queueController:BJQueueTypeMoveLeft];
+            [self addSubController:[self queueController:BJQueueTypeMid] index:index];
+            if (index < self.categoryTexts.count - 1) {
+                [self addSubController:[self queueController:BJQueueTypeRight] index:index + 1];
+            }
+        } else if (_selectIndex == index + 2) {
+            [self queueController:BJQueueTypeMoveRight];
+            [self queueController:BJQueueTypeMoveRight];
+            [self addSubController:[self queueController:BJQueueTypeMid] index:index];
+            if (index > 0) {
+                [self addSubController:[self queueController:BJQueueTypeLeft] index:index - 1];
             }
         } else if (_selectIndex < index) {
             if (index == self.categoryTexts.count-1) {
                 [self queueController:BJQueueTypeMoveLeft];
-                [self addSubController:[self queueController:BJQueueTypeRight] index:index];
-                [self addSubController:[self queueController:BJQueueTypeMid] index:index - 1];
-                self.selectVC = [self queueController:BJQueueTypeRight];
+                [self addSubController:[self queueController:BJQueueTypeMid] index:index];
+                [self addSubController:[self queueController:BJQueueTypeLeft] index:index - 1];
             } else {
-                [self queueController:BJQueueTypeMoveLeft];
-                [self queueController:BJQueueTypeMoveLeft];
                 [self addSubController:[self queueController:BJQueueTypeRight] index:index + 1];
                 [self addSubController:[self queueController:BJQueueTypeMid] index:index];
                 [self addSubController:[self queueController:BJQueueTypeLeft] index:index - 1];
-                self.selectVC = [self queueController:BJQueueTypeMid];
             }
         } else if (_selectIndex > index) {
             if (index == 0) {
                 [self queueController:BJQueueTypeMoveRight];
-                [self addSubController:[self queueController:BJQueueTypeLeft] index:0];
-                [self addSubController:[self queueController:BJQueueTypeMid] index:index + 1];
-                self.selectVC = [self queueController:BJQueueTypeLeft];
+                [self addSubController:[self queueController:BJQueueTypeMid] index:index];
+                [self addSubController:[self queueController:BJQueueTypeRight] index:index + 1];
             } else {
-                [self queueController:BJQueueTypeMoveRight];
-                [self queueController:BJQueueTypeMoveRight];
                 [self addSubController:[self queueController:BJQueueTypeLeft] index:index - 1];
                 [self addSubController:[self queueController:BJQueueTypeMid] index:index];
                 [self addSubController:[self queueController:BJQueueTypeRight] index:index + 1];
-                self.selectVC = [self queueController:BJQueueTypeMid];
             }
         }
+        self.selectVC = [self queueController:BJQueueTypeMid];
         [_bigscrollView setContentOffset:CGPointMake(BJScreenWidth * index, _bigscrollView.contentOffset.y)];
         _selectIndex = index;
         [self didSelect:_selectVC atIndex:_selectIndex];
