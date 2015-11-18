@@ -41,7 +41,7 @@
 }
 
 - (NSArray *)categoryTexts {
-    return @[@"新闻",@"消息中心",@"个人",@"更多",@"生活",@"天气"];
+    return @[@"新闻",@"消息中心",@"个人",@"更多",@"生活",@"天气",@"新闻",@"消息中心"];
 }
 
 - (NSString *)selectCategory {
